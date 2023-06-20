@@ -1,0 +1,74 @@
+home_page:
+    genius_popup:               'css=div.e5aa33035e'
+    genius_popup_close_btn:     '//button[@class="fc63351294 a822bdf511 e3c025e003 fa565176a8 f7db01295e c334e6f658 ae1678b153"]'
+    logo:                       'css=a.fc63351294'
+    flight_hotel:               '//a[@id="packages"]'
+
+agoda_booking_page:
+    agoda_logo:                 '//div[@class="Box-sc-kv6pi1-0 jixasX"]//img'
+    booking_logo:               '//div[@class="LogoAndLinksMenu__PartnerLogo"]//img'
+#    flying_from:                'css=input[aria-label="Flying from"]'
+    flying_from:                '//input[@aria-label="Flying from" and @class="SearchBoxTextEditor AutocompleteSearch__TextEditor"]'
+    airport_from:               'css=li[data-text="Sydney Airport"]'
+    flying_to:                  'css=input[aria-label="Flying to"]'
+    airport_to:                 'css=li[data-text="Rajiv Gandhi International Airport"]'
+    departure:                  '(//div[@class="SearchBoxTextDescription__title"])[1]'
+#    departure:                  '//div[text()="Departure"]'
+#    ${departure_date}:          '//div[@aria-label=${next_date}]'
+#    departure_date:             '//div[@aria-label=${}]'
+#    departure_date:             '//div[@class="DayPicker-Body"]/div[@class="DayPicker-Week"]/div[@aria-disabled="false"]/span[text()="19"][1]'
+#    return_date:                '//div[@class="DayPicker-Body"]/div[@class="DayPicker-Week"]/div[@aria-disabled="false"]/span[text()="25"][1]'
+    search_flight_hotel_btn:    '//button[@class="Buttonstyled__ButtonStyled-sc-5gjk6l-0 htsfYK sc-cxFLnm kPocJH"]'
+    hotel_check_in_popup:       '//h3[@class="Headingstyled__HeadingStyled-sc-v3bqq6-0 eKAjyM kite-js-Heading "]'
+    hotel_popup_ok_btn:         '//button[@class="Buttonstyled__ButtonStyled-sc-5gjk6l-0 jndwMN sc-dOSReg lhXIuw"]'
+    trip_from_to:               '//span[@class="Spanstyled__SpanStyled-sc-16tp9kb-0 gwICfd kite-js-Span sc-cKZHah iYAzYL"]'
+
+hotel_selection:
+    select_hotel:               '//span[@class="Spanstyled__SpanStyled-sc-16tp9kb-0 kpRlPc kite-js-Span Box-sc-kv6pi1-0 cjCPXs"]'
+    hotel:                      '//li[@data-hotelid="178188"]'
+    select_room_btn:            '//li[@data-hotelid="178188"]/div/a/div/div[3]/div/div[2]/button[@class="Buttonstyled__ButtonStyled-sc-5gjk6l-0 GdtgX Box-sc-kv6pi1-0 gCoSwT"]'
+    price_displayed:            '//li[@data-hotelid="178188"]/div/a/div/div[3]/div/div[2]/div/div/div/div[4]/div[@class="Box-sc-kv6pi1-0 bWGdbw"]/span[@class="PackagingInfo__DisplayPrice"]'
+    select_your_room:           '//span[@class="Spanstyled__SpanStyled-sc-16tp9kb-0 gUIsOK kite-js-Span Box-sc-kv6pi1-0 hcWQuh"]'
+
+room_selection:
+    room:                       '(//button[@class="sc-gsTCUz sc-dlfnbm  gbYCtD"]/span[text()="Rooms"])[2]'
+    room_btn:                   '(//button[@class="sc-gsTCUz sc-dlfnbm  gbYCtD"])[2]'
+    select_your_room:           '//h3[@class="Typographystyled__TypographyStyled-sc-j18mtu-0 hTkvyT kite-js-Typography " and text()="Select your room"]'
+    room:                       '//div[@id="MasterRoom-3168255"]/div/div/div/div/div/span'
+    room_count:                 '//div[@class="RoomGrid-titleCountersText"]'
+    child_room:                 '//div[@data-master-id="3168255" and @id="ChildRoom-CisI/t+CAxACGNivk7EBIL4uKPj0dDACShAyRDFOXzFEMTAwUF8xMDBQUJgFEggIASIEDgQMbBoEKAIwAQ=="]'
+    room_price_per_person:      '//div[@data-master-id="3168255" and @id="ChildRoom-CisI/t+CAxACGNivk7EBIL4uKPj0dDACShAyRDFOXzFEMTAwUF8xMDBQUJgFEggIASIEDgQMbBoEKAIwAQ=="]/div[@class="ChildRoomsList-room-contents"]/div[@class="ChildRoomsList-roomCell ChildRoomsList-roomCell-priceBook dealOfTheDay dealOfTheDay--fiveStar"]/span/span/div/div[@class="Box-sc-kv6pi1-0 bWGdbw"]'
+    book_now_btn:               '//button[@data-element-master-room-id="3168255"]'
+
+flight_selection:
+    chng_your_flight:           '//span[@class="Spanstyled__SpanStyled-sc-16tp9kb-0 fkrQnU kite-js-Span Box-sc-kv6pi1-0 jovODo"]'
+    cheapest_flight_card:       '//div[@data-component="flight-cheapest-card"]'
+    booking_summary:            '//span[@class="Spanstyled__SpanStyled-sc-16tp9kb-0 bFWkZy kite-js-Span "]'
+    flight_and_room_price:      '//span[@class="Spanstyled__SpanStyled-sc-16tp9kb-0 eSzwkY kite-js-Span "]'
+    book_btn:                   '//button[@class="Buttonstyled__ButtonStyled-sc-5gjk6l-0 kcBqLw Box-sc-kv6pi1-0 eoRCSd"]'
+
+customer_inf:
+    customer_information:       '//span[@aria-label="Customer information"]'
+    first_name:                 '//input[@id="contact.contactFirstName"]'
+    last_name:                  '//input[@id="contact.contactLastName"]'
+    email:                      '//input[@id="contact.email"]'
+    country:                    '//input[@id="contact.countryOfResidence"]'
+    country_india:              '//li[@data-objectid="35"]'
+    country_code:               '//input[@id="contact.country"]'
+    country_code_india:         '//li[@data-objectid="35"]'
+    mobile_number:              '//input[@id="contact.nationalNumber"]'
+
+passender_1:
+    gender:
+        female:                 '//input[@name="passengers[0].gender"]'
+        male:                   '//input[@name="passengers[0].gender" and @id="0"]'
+    first_name:                 '//input[@id="passengers[0].firstName"]'
+    last_name:                  '//input[@id="passengers[0].lastName"]'
+    dob:
+        day:                    '//select[@id="passengers[0].dateOfBirth-day"]'
+        month:                  '//select[@id="passengers[0].dateOfBirth-month"]'
+        year:                   '//select[@id="passengers[0].dateOfBirth-year"]'
+
+price:
+    total_pay:                  '//span[text()="Total you pay"]'
+    total:                      '//span[@class="BreakdownItem__spaceAround--GgEJH BreakdownItem__bold--dsdz- BreakdownItem__price--2jgHc"]'

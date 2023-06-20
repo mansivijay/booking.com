@@ -1,0 +1,13 @@
+DATA:
+        URL:   'https://booking.com/'
+        CHROME: 'googlechrome'
+        FIREFOX: 'firefox'
+        INTERNET_EXPLORER: 'internetexplorer'
+        EDGE: 'edge'
+        TIMEOUT: '60s'
+        MOBTIMEOUT: '15s'
+        LOW: '3s'
+        MEDIUM: '7s'
+        HIGH:  '10s'
+        AVERAGE: '5s'
+        TITLE: 'Booking.com | Official site | The best hotels, flights, car rentals & accommodations'

@@ -1,0 +1,18 @@
+search:
+    flight_from:   'Sydney'
+    flight_to:     'Hyderabad'
+
+alert:
+    heading:    'Modify hotel check-in date'
+
+hotel:
+    name:       'The Park Hyderabad Hotel'
+    title:      'The Park Hyderabad Hotel | Hyderabad 2020 UPDATED DEALS, HD Photos & Reviews'
+
+customer_information:
+    first_name:    'Mansi'
+    last_name:      'Vijay'
+    email:          'mansivijay1997@gmail.com'
+    country:        'India'
+    country_code:   'India (91)'
+    mobile_number:  '9414621967'
