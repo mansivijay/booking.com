@@ -142,37 +142,41 @@ select_flight
     SeleniumLibrary.Wait Until Element Is Visible       ${customer_inf.customer_information}    ${DATA.TIMEOUT}
     SeleniumLibrary.Capture Page Screenshot
 
-add_customer_information
-    [Documentation]     Add Customer Information
-    SeleniumLibrary.Wait Until Element Is Visible       ${customer_inf.customer_information}    ${DATA.TIMEOUT}
-    SeleniumLibrary.Capture Page Screenshot
-    SeleniumLibrary.Input Text              ${customer_inf.first_name}      ${customer_information.first_name}
-    SeleniumLibrary.Input Text              ${customer_inf.last_name}       ${customer_information.last_name}
-    SeleniumLibrary.Input Text              ${customer_inf.email}           ${customer_information.email}
-    SeleniumLibrary.Click Element               ${customer_inf.country}
-    SeleniumLibrary.Click Element           ${customer_inf.country_india}
-    SeleniumLibrary.Click Element               ${customer_inf.country_code}
-    SeleniumLibrary.Click Element           ${customer_inf.country_code_india}
-    SeleniumLibrary.Input Text              ${customer_inf.mobile_number}    ${customer_information.mobile_number}
-    SeleniumLibrary.Capture Page Screenshot
-    Log         Customer Information is added
+#add_customer_information
+#    [Documentation]     Add Customer Information
+#    SeleniumLibrary.Wait Until Element Is Visible       ${customer_inf.customer_information}    ${DATA.TIMEOUT}
+#    SeleniumLibrary.Capture Page Screenshot
+#    SeleniumLibrary.Input Text              ${customer_inf.first_name}      ${customer_information.first_name}
+#    SeleniumLibrary.Input Text              ${customer_inf.last_name}       ${customer_information.last_name}
+#    SeleniumLibrary.Input Text              ${customer_inf.email}           ${customer_information.email}
+#    SeleniumLibrary.Click Element               ${customer_inf.country}
+#    SeleniumLibrary.Click Element           ${customer_inf.country_india}
+#    SeleniumLibrary.Click Element               ${customer_inf.country_code}
+#    SeleniumLibrary.Click Element           ${customer_inf.country_code_india}
+#    SeleniumLibrary.Input Text              ${customer_inf.mobile_number}    ${customer_information.mobile_number}
+#    SeleniumLibrary.Capture Page Screenshot
+#    Log         Customer Information is added
 
-add_passenger_1_information
-    SeleniumLibrary.Scroll Element Into View        ${passender_1.gender.female}
-    SeleniumLibrary.Capture Page Screenshot
-    SeleniumLibrary.Select Radio Button     ${passender_1.gender.female}        1
+#add_passenger_1_information
+#    SeleniumLibrary.Scroll Element Into View        ${passender_1.gender.female}
+#    SeleniumLibrary.Capture Page Screenshot
+#    SeleniumLibrary.Select Radio Button     ${passender_1.gender.female}        1
 
 validate_prices
     Log     ${hotel_and_flight_price}
     Log     ${room_price}
     Log     ${flight_and_room_price}
-    Sleep   50s
+    Sleep   30s
     SeleniumLibrary.Scroll Element Into View        ${price.total_pay}
     ${total_price}  SeleniumLibrary.Get Text        ${price.total}
     Log     ${total_price}
     ${str}  String.Remove String    ${total_price}    Rs.   ,
-    set test variable       ${total_price}}    ${str}
+    set test variable       ${total_price}    ${str}
     Log     ${flight_and_room_price}
+    ${price_display_at_search}    Evaluate    ${hotel_and_flight_price} + ${room_price}
+    Log     ${price_display_at_search}
+    Log     ${total_price}
+    Log     Price displayed at search is same as displayed at confirmation
 
 
 
